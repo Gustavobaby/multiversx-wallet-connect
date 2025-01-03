@@ -2,9 +2,21 @@
   "name": "multiversx-wallet-connect",
   "version": "1.0.0",
   "dependencies": {
-    "@multiversx/sdk-extension-provider": "latest",
     "@multiversx/sdk-core": "latest",
+    "@multiversx/sdk-extension-provider": "latest",
     "@multiversx/sdk-native-auth-client": "latest",
     "@multiversx/sdk-native-auth-server": "latest"
+  },
+  "devDependencies": {
+    "crypto-browserify": "^3.12.1",
+    "events": "^3.3.0",
+    "parcel": "latest",
+    "path-browserify": "^1.0.1",
+    "process": "^0.11.10",
+    "stream-browserify": "^3.0.0",
+    "vm-browserify": "^1.1.2"
+  },
+  "scripts": {
+    "start": "parcel index.html"
   }
 }
