@@ -1,4 +1,5 @@
 import { ExtensionProvider } from "@multiversx/sdk-extension-provider";
+import { Transaction, SignableMessage } from "@multiversx/sdk-core";
 
 const provider = ExtensionProvider.getInstance();
 
@@ -19,3 +20,15 @@ await provider.login({ token: nativeAuthInitialPart });
 const address = provider.account.address;
 const signature = provider.account.signature;
 const nativeAuthToken = nativeAuthClient.getToken(address, nativeAuthInitialPart, signature);
+
+// Signing transactions
+const firstTransaction = new Transaction({ /* transaction details */ });
+const secondTransaction = new Transaction({ /* transaction details */ });
+await provider.signTransactions([firstTransaction, secondTransaction]);
+
+// Signing messages
+const message = new SignableMessage({
+    message: Buffer.from("hello")
+});
+await provider.signMessage(message);
+console.log(message.toJSON());
