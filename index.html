@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MultiversX Wallet Connect</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #1a1b23;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .connect-button {
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: 600;
+            color: #ffffff;
+            background: linear-gradient(135deg, #23a2ee 0%, #1c6dd0 100%);
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            box-shadow: 0 4px 15px rgba(35, 162, 238, 0.2);
+        }
+
+        .connect-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(35, 162, 238, 0.3);
+        }
+
+        .connect-button:active {
+            transform: translateY(0);
+        }
+
+        .wallet-icon {
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <button class="connect-button">
+        <svg class="wallet-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19 7h-1V6c0-1.1-.9-2-2-2H4C2.9 4 2 4.9 2 6v12c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-1h1c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2zm-1 3v6h-1V9c0-.55-.45-1-1-1H4V6h12v1c0 1.1.9 2 2 2h1v1z" fill="currentColor"/>
+        </svg>
+        Connect Wallet
+    </button>
+</body>
+</html>

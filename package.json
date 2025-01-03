@@ -1,0 +1,7 @@
+{
+  "name": "multiversx-wallet-connect",
+  "version": "1.0.0",
+  "dependencies": {
+    "@multiversx/sdk-extension-provider": "latest"
+  }
+}
