@@ -1,7 +1,9 @@
 import { ExtensionProvider } from "@multiversx/sdk-extension-provider";
 import { Transaction, SignableMessage } from "@multiversx/sdk-core";
+import { NativeAuthClient } from "@multiversx/sdk-native-auth-client";
 
 const provider = ExtensionProvider.getInstance();
+const nativeAuthClient = new NativeAuthClient();
 
 await provider.init();
 

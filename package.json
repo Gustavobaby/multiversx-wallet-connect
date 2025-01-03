@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "dependencies": {
     "@multiversx/sdk-extension-provider": "latest",
-    "@multiversx/sdk-core": "latest"
+    "@multiversx/sdk-core": "latest",
+    "@multiversx/sdk-native-auth-client": "latest",
+    "@multiversx/sdk-native-auth-server": "latest"
   }
 }
